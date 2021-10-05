@@ -1,20 +1,20 @@
 # Team notes
 This is for maintaining communication about your team's working meetings to "ship" the project.
 
-10/5/2021 Class
-What are the characteristics of the card?
+# 10/5/2021 Class
+- What are the characteristics of the card?
 icon, colored banner, header/sub header, content body
-What design considerations must we take into account?
+- What design considerations must we take into account?
 color, shape of card, padding, size of card, heading overflow
-What accessibility concerns do we potentially have?
+- What accessibility concerns do we potentially have?
 contrast, tab to body content, heading order
-What security concerns do we potentially have?
+- What security concerns do we potentially have?
 content flexibility security
-What "states" does this card have?
+- What "states" does this card have?
 hover, disabled
-What areas do we need to account for flexible content / HTML entry of any kind?
+- What areas do we need to account for flexible content / HTML entry of any kind?
 size of card heading overflow, mobile show all content
-Do we have room for additional reusable atoms to be produced? (there are 4 total by my count)
+- Do we have room for additional reusable atoms to be produced? (there are 4 total by my count)
 icon, body, title, header/banner
 
 ## Meeting notes
