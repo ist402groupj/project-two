@@ -30,7 +30,7 @@ What are the take aways from the portion of classs about implementing Simple Col
 - Have a light mode as the default and adjust the ascent value for the  Dark Mode. 
 
 What did you learn from other groups?
--IST 402 Group G-1 are planning to break down the project into four components like the header, body,  banner and icon 
+- IST 402 Group G-1 are planning to break down the project into four components like the header, body,  banner and icon 
 
 
 #### What we'll do next
