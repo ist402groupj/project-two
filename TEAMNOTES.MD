@@ -17,9 +17,24 @@ size of card heading overflow, mobile show all content
 - Do we have room for additional reusable atoms to be produced? (there are 4 total by my count)
 icon, body, title, header/banner
 
+
 ## Meeting notes
 These are notes to be maintained PER date that you meet. What you did and what the next steps are
 ### Meeting Date
+Thursday  October 14, 2021
+#### What we did:
+Met with Group G-1
+
+What are the take aways from the portion of classs about implementing Simple Colors?
+Considering accessibility when choosing the color ascent value. 
+Have a light mode as the default and adjust the ascent value for the  Dark Mode. 
+
+What did you learn from other groups?
+IST 402 Group G-1 are planning to break down the project into four components like the header, body,  banner and icon 
+
+
+#### What we'll do next
+Meet together as a group outside of class to work on the Sunday Checkin -2 
 
 #### What we did:
 
