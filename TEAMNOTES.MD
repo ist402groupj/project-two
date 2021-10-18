@@ -17,6 +17,11 @@ size of card heading overflow, mobile show all content
 - Do we have room for additional reusable atoms to be produced? (there are 4 total by my count)
 icon, body, title, header/banner
 
+## 10/14/21 Class
+What did you take away from the portion of class about implementing SimpleColors?
+-
+What did you learn from other groups?
+What are your next steps?
 ## Meeting notes
 These are notes to be maintained PER date that you meet. What you did and what the next steps are
 ### Meeting Date
@@ -49,7 +54,24 @@ https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/
 more card design ideas:
 https://uicookies.com/css-card-design/
 ### Check-in 2
-- 
+ We researched the header and banner and discussed different ideas. We considered SimpleColors as an alternative for CSS. Below are resources we found useful:
+ 
+#header_wrap {
+          color: var(
+            --self-check-heading-text,
+            var(--simple-colors-default-theme-grey-1, #fff)
+          );
+
+ background-color: var(
+            --self-check-heading-color,
+            var(--simple-colors-default-theme-accent-8, #444)
+          );
+
+simpleColors Code:
+https://user-images.githubusercontent.com/329735/137164622-5f5314c6-9d0c-438d-9209-7f30e1dd52b3.png
+
+SimpleColors example:
+https://github.com/elmsln/lrnwebcomponents/blob/master/elements/simple-colors/demo/extending.html
 - 
 ### Check-in 3
 - 
