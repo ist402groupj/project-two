@@ -18,20 +18,11 @@ size of card heading overflow, mobile show all content
 icon, body, title, header/banner
 
 ## 10/14/21 Class
-What did you take away from the portion of class about implementing SimpleColors?
--
-What did you learn from other groups?
-What are your next steps?
-## Meeting notes
-These are notes to be maintained PER date that you meet. What you did and what the next steps are
-### Meeting Date
-
-#### What we did:
-
+### What we did:
+In class today we learned about a new way to set and change colors called SimpleColors which will be useful in our code.
 
 #### What we'll do next
-
-
+Our next steps are to consider implementing colors using SimpleColors into our card. In addition to that, we are further developing our code.
 ## Status check ins
 These are dedicated status check-ins as this is a multi-week project
 ### Check-in 1
@@ -55,7 +46,7 @@ more card design ideas:
 https://uicookies.com/css-card-design/
 ### Check-in 2
  We researched the header and banner and discussed different ideas. We considered SimpleColors as an alternative for CSS. Below are resources we found useful:
- 
+
 #header_wrap {
           color: var(
             --self-check-heading-text,
