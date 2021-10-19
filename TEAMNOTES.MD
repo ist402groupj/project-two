@@ -50,6 +50,15 @@ Meet together as a group outside of class to work on the Sunday Checkin -2
 ### What approaches can you leverage from his example to enhance your team's element?
 Some enhancements our team can use include incorporating svgs and button accessibility to make our card more interactive on the page and more refined if it were to be displayed on a mobile device.
 ### How could you take his approach and envision a more flexible version?
+Dynamic import  in-class code review
+Constructor(){
+…
+SetTimeout()) => {
+import (;./CardHeader.js’);
+import(‘./CardIcon.js’);
+import(‘./CardFrame.js’);
+}, 0);
+}
 
 ### What are your next steps?
 Our group is scheduling to meet outside of class this week and continue to build our card.
