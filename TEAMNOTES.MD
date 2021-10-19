@@ -32,14 +32,27 @@ What are the take aways from the portion of classs about implementing Simple Col
 What did you learn from other groups?
 - IST 402 Group G-1 are planning to break down the project into four components like the header, body,  banner and icon 
 
-
 #### What we'll do next
 Meet together as a group outside of class to work on the Sunday Checkin -2 
 
-#### What we did:
+## 10/19/21 class: Chuck Lavera guest presenter --> reviewing his card project and implementing some of these ideas into our card
 
+### Add to TEAMNOTES what you learned from the example Chuck presented.
+-svgs: used to animate icons  Chem connection card in class has  a basic icon. There was discussion to add svgs so the icon moves a little to indicate engagement
+-responsive design
+	- the card shrinks down when the page is minimized
+	- the button on the bottom left of the page moves to the center when page is minimized
+	-media queries used for mobile responsive design
+-accessibility of button
+	-tabindex
+	-role
+	-aria-label
+### What approaches can you leverage from his example to enhance your team's element?
+Some enhancements our team can use include incorporating svgs and button accessibility to make our card more interactive on the page and more refined if it were to be displayed on a mobile device.
+### How could you take his approach and envision a more flexible version?
 
-#### What we'll do next
+### What are your next steps?
+Our group is scheduling to meet outside of class this week and continue to build our card.
 
 
 ## Status check ins
