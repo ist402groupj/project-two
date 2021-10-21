@@ -17,12 +17,7 @@ size of card heading overflow, mobile show all content
 - Do we have room for additional reusable atoms to be produced? (there are 4 total by my count)
 icon, body, title, header/banner
 
-## 10/14/21 Class
-### What we did:
-In class today we learned about a new way to set and change colors called SimpleColors which will be useful in our code.
 
-#### What we'll do next
-Our next steps are to consider implementing colors using SimpleColors into our card. In addition to that, we are further developing our code.
 ## Status check ins
 These are dedicated status check-ins as this is a multi-week project
 ### Check-in 1
