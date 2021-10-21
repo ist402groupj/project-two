@@ -5,7 +5,7 @@ import { SimpleColors } from '@lrnwebcomponents/simple-colors/simple-colors.js';
 // const lightbulb = new URL('../assets/lightbulb.svg', import.meta.url).href;
 const question = new URL('../assets/question.svg', import.meta.url).href;
 
-export class SciCardIcon extends SimpleColors {
+export class CardIcon extends SimpleColors {
   static get tag() {
     return 'sci-card-icon';
   }
