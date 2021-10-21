@@ -1,4 +1,4 @@
-/**import { LitElement, html, css } from 'lit';
+import { LitElement, html, css } from 'lit';
 
 export class CardFrame extends LitElement {
   static get tag() {
@@ -31,8 +31,7 @@ export class CardFrame extends LitElement {
   }
 }
 
-customElements.define(CardFrame.tag, CardFrame);
+/**customElements.define(CardFrame.tag, CardFrame);
 © 2021 GitHub, Inc.
 Terms
-Privacy
-**/
+Privacy**/

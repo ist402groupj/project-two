@@ -1,4 +1,4 @@
-/**import { html, css } from 'lit';
+import { html, css } from 'lit';
 import { SimpleColors } from '@lrnwebcomponents/simple-colors/simple-colors.js';
 
 // const beaker = new URL('../assets/beaker.svg', import.meta.url).href;
@@ -96,9 +96,9 @@ export class SciCardIcon extends SimpleColors {
       css`
         :host {
           display: block;
-          --sci-card-banner-color1: darkorange;
-          --sci-card-banner-color2: green;
-          --sci-card-banner-color3: blue;
+          --banner-color-1: red;
+          --banner-color-2: purple;
+          --sbanner-color-3: orange;
         }
         img {
           display: inline-flex;
@@ -117,13 +117,13 @@ export class SciCardIcon extends SimpleColors {
         /* #banner2 {
           display: flex;
           flex-direction: row;
-          background-color: var(--sci-card-banner-color2);
+          background-color: var(--banner-color-2);
           color: white;
         }
         #banner3 {
           display: flex;
           flex-direction: row;
-          background-color: var(--sci-card-banner-color3);
+          background-color: var(--banner-color-3);
           color: white;
         } 
         #headers {
@@ -160,4 +160,4 @@ export class SciCardIcon extends SimpleColors {
       </div>
     `;
   }
-} **/
+} 
