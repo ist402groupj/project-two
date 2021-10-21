@@ -1,6 +1,8 @@
 # Team notes
 This is for maintaining communication about your team's working meetings to "ship" the project.
 
+PROJECT 2 RREFERENCE: https://github.com/elmsln/edtechjoker/tree/master/fall-21/projects/p2-card
+
 # 10/5/2021 Class
 - What are the characteristics of the card?
 icon, colored banner, header/sub header, content body
