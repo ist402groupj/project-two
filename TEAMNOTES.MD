@@ -112,7 +112,9 @@ SimpleColors example:
 https://github.com/elmsln/lrnwebcomponents/blob/master/elements/simple-colors/demo/extending.html
 - 
 ### Check-in 3
-- 
-- 
+-  Elements started: Frame/Scaffolding, Banner, Icon,Card
+- Group Meetings: group met once outside of class and worked for about an hour. Plan to meet a couple of times this upcoming week
+- Difficulties: uploading to github, scheudling group meetings, linter issues
+- Things have been going well: TBD
 ### Check-in 4
 - 
