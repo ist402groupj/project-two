@@ -7040,6 +7040,11 @@
   "resolved" "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.5.tgz"
   "version" "3.0.5"
 
+"simple-icons@^5.19.0":
+  "integrity" "sha512-7UM+1waexojA+2EmMvchCWTIiJY8lEeOxiwBMal+Tqu3GxcOpPXevSm9+1/Fnk0IqmNrF3rTnDDV41m/Utzinw=="
+  "resolved" "https://registry.npmjs.org/simple-icons/-/simple-icons-5.19.0.tgz"
+  "version" "5.19.0"
+
 "slash@^3.0.0":
   "integrity" "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
   "resolved" "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz"
