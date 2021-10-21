@@ -18,52 +18,6 @@ size of card heading overflow, mobile show all content
 icon, body, title, header/banner
 
 
-## Meeting notes
-These are notes to be maintained PER date that you meet. What you did and what the next steps are
-### Meeting Date
-Thursday  October 14, 2021
-#### What we did:
-Met with Group G-1
-
-What are the take aways from the portion of classs about implementing Simple Colors?
-- Considering accessibility when choosing the color ascent value. 
-- Have a light mode as the default and adjust the ascent value for the  Dark Mode. 
-
-What did you learn from other groups?
-- IST 402 Group G-1 are planning to break down the project into four components like the header, body,  banner and icon 
-
-#### What we'll do next
-Meet together as a group outside of class to work on the Sunday Checkin -2 
-
-## 10/19/21 class: Chuck Lavera guest presenter --> reviewing his card project and implementing some of these ideas into our card
-
-### Add to TEAMNOTES what you learned from the example Chuck presented.
--svgs: used to animate icons  Chem connection card in class has  a basic icon. There was discussion to add svgs so the icon moves a little to indicate engagement
--responsive design
-	- the card shrinks down when the page is minimized
-	- the button on the bottom left of the page moves to the center when page is minimized
-	-media queries used for mobile responsive design
--accessibility of button
-	-tabindex
-	-role
-	-aria-label
-### What approaches can you leverage from his example to enhance your team's element?
-Some enhancements our team can use include incorporating svgs and button accessibility to make our card more interactive on the page and more refined if it were to be displayed on a mobile device.
-### How could you take his approach and envision a more flexible version?
-Dynamic import  in-class code review
-Constructor(){
-…
-SetTimeout()) => {
-import (;./CardHeader.js’);
-import(‘./CardIcon.js’);
-import(‘./CardFrame.js’);
-}, 0);
-}
-
-### What are your next steps?
-Our group is scheduling to meet outside of class this week and continue to build our card.
-
-
 ## Status check ins
 These are dedicated status check-ins as this is a multi-week project
 ### Check-in 1
@@ -87,7 +41,7 @@ more card design ideas:
 https://uicookies.com/css-card-design/
 ### Check-in 2
  We researched the header and banner and discussed different ideas. We considered SimpleColors as an alternative for CSS. Below are resources we found useful:
- 
+
 #header_wrap {
           color: var(
             --self-check-heading-text,
