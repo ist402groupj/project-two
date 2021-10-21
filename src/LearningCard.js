@@ -87,9 +87,9 @@ export class LearningCard extends LitElement {
       <div class="slot-wrapper" data-label="Header" data-layout-slotname="header">
         <slot name="header"></slot>
       </div>
-      <img part="icon" src="${beaker}" alt=""/>
-      <img part="icon" src="${lightbulb}" />
-      <img part="icon" src="${question}" alt=""/>
+      <img part="icon" src="${beaker}" alt=" beaker icon"/>
+      <img part="icon" src="${lightbulb}"alt=" lightbulb icon"/>
+      <img part="icon" src="${question}" alt="Question Icon"/>
       <div class="slot-wrapper" data-label="Content" data-layout-slotname="content">
         <slot name="content"></slot>
         <slot></slot>
