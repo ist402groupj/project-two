@@ -1,5 +1,6 @@
 // dependencies / things imported
 import { LitElement, html, css } from 'lit';
+import './CardBanner.js';
 
 // this is the base path to the assets calculated at run time
 // this ensures that assets are shipped correctly when building the demo
