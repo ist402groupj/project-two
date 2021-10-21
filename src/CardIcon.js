@@ -7,7 +7,7 @@ const question = new URL('../assets/question.svg', import.meta.url).href;
 
 export class CardIcon extends SimpleColors {
   static get tag() {
-    return 'sci-card-icon';
+    return 'card-icon';
   }
 
   // updated fires every time a property defined above changes

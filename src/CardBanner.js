@@ -7,7 +7,7 @@ import { SimpleColors } from '@lrnwebcomponents/simple-colors/simple-colors.js';
 
 export class CardBanner extends SimpleColors {
   static get tag() {
-    return 'sci-card-banner';
+    return 'card-banner';
   }
 
   // updated fires every time a property defined above changes
