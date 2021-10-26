@@ -102,8 +102,8 @@ export class CardIcon extends SimpleColors {
         }
         img {
           display: inline-flex;
-          height: var(--sci-card-height, 150px);
-          width: var(--sci-card-width, 150px);
+          height: var(--card-height, 150px);
+          width: var(--card-width, 150px);
           background-color: transparent;
         }
         #banner1 {
@@ -160,4 +160,4 @@ export class CardIcon extends SimpleColors {
       </div>
     `;
   }
-} 
+}

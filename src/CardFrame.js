@@ -5,20 +5,16 @@ export class CardFrame extends LitElement {
     return 'card-frame';
   }
 
-  constructor() {
-    super();
-
-  }
+  // constructor() {
+  //  super();
+  // }
 
   static get properties() {
-    return {
-
-    };
+    return {};
   }
 
   static get styles() {
-    return css`
-    `;
+    return css``;
   }
 
   render() {
@@ -31,7 +27,7 @@ export class CardFrame extends LitElement {
   }
 }
 
-/**customElements.define(CardFrame.tag, CardFrame);
-© 2021 GitHub, Inc.
+customElements.define(CardFrame.tag, CardFrame);
+/** © 2021 GitHub, Inc.
 Terms
-Privacy**/
+Privacy* */
