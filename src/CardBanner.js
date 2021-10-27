@@ -55,13 +55,6 @@ export class CardBanner extends SimpleColors {
       this.shadowRoot.querySelector('summary').style.listStyleImage =
         "url('../assets/arrow-right.svg')";
     }
-
-    // if (this.open) {
-    //   document.querySelector('summary::marker').style.transform = 'rotate(-90deg)';
-    // } else {
-    //   console.log("hi");
-    //   // document.querySelector('summary::marker').style.transform = 'rotate(90deg)';
-    // }
   }
 
   constructor() {
@@ -91,10 +84,13 @@ export class CardBanner extends SimpleColors {
           --banner-color-2: purple;
           --banner-color-3: orange;
         }
+        .banner-wrapper {
+          background-color: var(--simple-colors-default-theme-accent-7);
+        }
         img {
           display: inline-flex;
-          height: var(--sci-card-height, 150px);
-          width: var(--sci-card-width, 150px);
+          height: var(--card-height, 150px);
+          width: var(--card-width, 150px);
           background-color: transparent;
         }
         #banner1 {
@@ -105,7 +101,7 @@ export class CardBanner extends SimpleColors {
           background-color: transparent;
           color: white;
         }
-        /* #banner2 {
+        #banner2 {
           display: flex;
           flex-direction: row;
           background-color: var(--banner-color-2);
@@ -116,7 +112,7 @@ export class CardBanner extends SimpleColors {
           flex-direction: row;
           background-color: var(--banner-color-3);
           color: white;
-        } 
+        }
         #headers {
           padding: 5px;
           margin: 5px;
@@ -146,11 +142,8 @@ export class CardBanner extends SimpleColors {
   render() {
     // return html`<div>This is my ${this.title} and this is ${this.header}<slot></slot></div>`;
     return html`
-      <div id="bannerElement">
-        <sci-card-icon
-          icon="${this.myIcon}"
-          type="${this.myIcon}"
-        ></sci-card-icon>
+      <div class="banner-wrapper" style="display: flex;">
+        <card-icon icon="${this.myIcon}" type="${this.myIcon}"></card-icon>
         <div id="banner1">
           <div id="headers">
             <slot id="main-header" name="main-header"></slot>
@@ -175,4 +168,4 @@ export class CardBanner extends SimpleColors {
       </script>
     `;
   }
-} 
+}

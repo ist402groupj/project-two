@@ -56,18 +56,18 @@
   </div>
   <script type="module">
     import "./src/app.js";
+    import "./src/CardFrame.js";
   </script>
 </body>
 
 </html>
 
-<card-scaffold>
+<card-frame>
   <div slot="header">
     <card-icon>
     <card-banner>
-    <div slot="header"><slot name="header1"...
-    <div slot="subheader"><slot name="header2"...
-                                </div>
-  <div slot="content">
+    <div slot="header"><slot name="header1"></slot></div>
+    <div slot="subheader"><slot name="header2"></slot></div>
+  <div slot="content"></div>>
     <slot></slot>
-  </card-scaffold>
+  </card-frame>
