@@ -26,6 +26,7 @@
     "simple-icons": "^5.19.0"
   },
   "devDependencies": {
+    "@ist402group19j/cta-button": "1.0.0",
     "@babel/preset-env": "^7.15.6",
     "@custom-elements-manifest/analyzer": "^0.4.17",
     "@lrnwebcomponents/deduping-fix": "^4.0.0",

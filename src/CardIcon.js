@@ -1,36 +1,63 @@
-import { html, css } from 'lit';
-import { SimpleColors } from '@lrnwebcomponents/simple-colors/simple-colors.js';
+import { css, html, LitElement } from 'lit';
 
-// const beaker = new URL('../assets/beaker.svg', import.meta.url).href;
-// const lightbulb = new URL('../assets/lightbulb.svg', import.meta.url).href;
+const beaker = new URL('../assets/beaker.svg', import.meta.url).href;
+const lightbulb = new URL('../assets/lightbulb.svg', import.meta.url).href;
 const question = new URL('../assets/question.svg', import.meta.url).href;
 
-export class CardIcon extends SimpleColors {
+export class CardIcon extends LitElement {
   static get tag() {
     return 'card-icon';
   }
 
+  // CSS - specific to Lit
+  static get styles() {
+    return css`
+      :host {
+        display: block;
+        height: var(--icon-height, inherit);
+        width: var(--icon-width, inherit);
+      }
+      #icon {
+        width: inherit;
+        height: inherit;
+      }
+    `;
+  }
+
+  static get properties() {
+    return {
+      type: { type: String, reflect: true },
+      icon_value: { type: Map },
+      iconHeight: { type: String, attribute: 'icon-height', reflect: true },
+      iconWidth: { type: String, attribute: 'icon-width', reflect: true },
+    };
+  }
+
+  constructor() {
+    super();
+    this.type = 'math';
+    this.iconHeight = 'inherit';
+    this.iconWidth = 'inherit';
+    this.icon_value = new Map();
+    this.icon_value.set('math', lightbulb);
+    this.icon_value.set('science', beaker);
+    this.icon_value.set('question', question);
+  }
+
+  // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
   // updated fires every time a property defined above changes
   // this allows you to react to variables changing and use javascript to perform logic
   updated(changedProperties) {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === 'type' && this[propName] === 'science') {
-        this.myIcon = 'beaker';
+        this.icon = beaker;
+        this.accentColor = 'green';
       }
       if (propName === 'type' && this[propName] === 'objective') {
-        this.myIcon = 'lightbulb';
-      }
-      if (propName === 'type' && this[propName] === 'fact') {
-        this.myIcon = 'question';
-      }
-      if (propName === 'type' && this[propName] === 'beaker') {
-        this.myIcon = this.beaker;
-      }
-      if (propName === 'type' && this[propName] === 'lightbulb') {
-        this.myIcon = this.lightbulb;
+        this.icon = lightbulb;
       }
       if (propName === 'type' && this[propName] === 'question') {
-        this.myIcon = this.question;
+        this.icon = question;
       }
     });
   }
@@ -40,123 +67,21 @@ export class CardIcon extends SimpleColors {
   firstUpdated(changedProperties) {
     if (super.firstUpdated) {
       super.firstUpdated(changedProperties);
+      this.style.setProperty('--icon-height', this.iconHeight);
+      this.style.setProperty('--icon-width', this.iconWidth);
     }
   }
 
-  // HTMLElement life-cycle, element has been connected to the page / added or moved
-  // this fires EVERY time the element is moved
-  connectedCallback() {
-    super.connectedCallback();
-  }
-
-  // HTMLElement life-cycle, element has been removed from the page OR moved
-  // this fires every time the element moves
-  disconnectedCallback() {
-    super.disconnectedCallback();
-  }
-
-  _rotateIcon() {
-    // console.log(this);
-    if (!this.shadowRoot.querySelector('details').open) {
-      this.shadowRoot.querySelector('summary').style.listStyleImage =
-        "url('../assets/arrow-down.svg')";
-    } else {
-      this.shadowRoot.querySelector('summary').style.listStyleImage =
-        "url('../assets/arrow-right.svg')";
-    }
-
-    // if (this.open) {
-    //   document.querySelector('summary::marker').style.transform = 'rotate(-90deg)';
-    // } else {
-    //   console.log("hi");
-    //   // document.querySelector('summary::marker').style.transform = 'rotate(90deg)';
-    // }
-  }
-
-  constructor() {
-    super();
-    this.accentColor = 'green';
-    this.dark = false;
-  }
-
-  static get properties() {
-    return {
-      ...super.properties,
-      // reflect allows state changes to the element's property to be leveraged in CSS selectors
-      type: { type: String, reflect: true },
-      // attribute helps us bind the JS spec for variables names to the HTML spec
-      // <learning-card my-icon="whatever" will set this.myIcon to "whatever"
-      myIcon: { type: String, attribute: 'my-icon' },
-    };
-  }
-
-  static get styles() {
-    return [
-      ...super.styles,
-      css`
-        :host {
-          display: block;
-          --banner-color-1: red;
-          --banner-color-2: purple;
-          --sbanner-color-3: orange;
-        }
-        img {
-          display: inline-flex;
-          height: var(--card-height, 150px);
-          width: var(--card-width, 150px);
-          background-color: transparent;
-        }
-        #banner1 {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          background-color: transparent;
-          color: white;
-        }
-        /* #banner2 {
-          display: flex;
-          flex-direction: row;
-          background-color: var(--banner-color-2);
-          color: white;
-        }
-        #banner3 {
-          display: flex;
-          flex-direction: row;
-          background-color: var(--banner-color-3);
-          color: white;
-        } 
-        #headers {
-          padding: 5px;
-          margin: 5px;
-          display: inline-flex;
-          flex-direction: column;
-          justify-content: left;
-          align-items: left;
-        }
-        #main-header {
-          font-size: 200%;
-          text-transform: uppercase;
-          font-weight: 300;
-        }
-        #sub-header {
-          font-size: 250%;
-          text-transform: uppercase;
-          font-weight: 500;
-        }
-        #bannerElement {
-          display: flex;
-          flex-direction: row;
-        }
-      `,
-    ];
-  }
-
+  // HTML - specific to Lit
   render() {
-    // return html`<div>This is my ${this.title} and this is ${this.header}<slot></slot></div>`;
     return html`
-      <div id="bannerElement">
-        <img part="icon" src="${question}" alt="" />
+      <div id="card-icon-container">
+        <img
+          part="icon"
+          id="icon"
+          src="${this.icon_value.get(this.type)}"
+          alt="learning card ${this.type} icon"
+        />
       </div>
     `;
   }
