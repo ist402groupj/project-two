@@ -74,7 +74,8 @@ Our group is scheduling to meet outside of class this week and continue to build
 
 ## Status check ins
 These are dedicated status check-ins as this is a multi-week project
-### Check-in 1
+
+## Check-in 1 (10/10)
 - Element Names:
 1) Header
 https://getbootstrap.com/docs/4.0/components/card/
@@ -93,7 +94,8 @@ https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/
 
 more card design ideas:
 https://uicookies.com/css-card-design/
-### Check-in 2
+
+## Check-in 2 (10/17)
  We researched the header and banner and discussed different ideas. We considered SimpleColors as an alternative for CSS. Below are resources we found useful:
 
 #header_wrap {
@@ -112,11 +114,21 @@ https://user-images.githubusercontent.com/329735/137164622-5f5314c6-9d0c-438d-92
 
 SimpleColors example:
 https://github.com/elmsln/lrnwebcomponents/blob/master/elements/simple-colors/demo/extending.html
-- 
-### Check-in 3
+
+## Check-in 3 (10/23)
 -  Elements started: Frame/Scaffolding, Banner, Icon,Card
 - Group Meetings: group met once outside of class and worked for about an hour. Plan to meet a couple of times this upcoming week
-- Difficulties: uploading to github, scheudling group meetings, linter issues
+- Difficulties: uploading to github, scheduling group meetings, linter issues
 - Things have been going well: TBD
-### Check-in 4
-- 
+
+## Check-in 4 (10/31/21)
+### What have completed so far
+- four web components: CardFrame, CardBanner, CardIcon, JCard
+-  SimpleColors implementation underway
+-  Similar visual composit to example
+### What we need to finish up/plan to do in these next few days
+- final meetup either sunday night or monday to solidify the details of our project
+-  publishing to npm and submitting link to github repo on Canvas by Tues.
+-  Work on storybook part and add a story for every element
+-  Project testing per element
+
