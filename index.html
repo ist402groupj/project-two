@@ -14,6 +14,10 @@
       padding: 50px;
       font-family: sans-serif;
     }
+
+    h1 {
+      white-space: nowrap;
+    }
     .wrapper {
       margin: 100px;
     }
@@ -35,6 +39,26 @@
       width: 200px;
       height: 200px;
     }
+    .card-showcase {
+      display: block;
+      height: 200px;
+      width: 200px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    #one {
+      background-color: gray;
+    }
+    #two {
+      width: 500px;
+    }
+    #three {
+      width: 500px;
+    }
+    #four {
+      width: 500px;
+      margin-bottom: 150px;
+    }
   </style>
   <title>Project two: learning card</title>
 </head>
@@ -45,29 +69,58 @@
     <li><a href="/hax.html">HAX, card demo</a></li>
   </ul>
   <div class="wrapper">
-    <learning-card class="one"></learning-card>
-    <learning-card class="two" has-subheader>
-      <p>This is the card GENERIC</p>
-      <p slot="header">This is the card HEADER</p>
-      <p slot="content">This is the card CONTENT</p>
-      <p slot="subheader">This is the card SUBHEADER</p>
-    </learning-card>
-    <learning-card type="science"></learning-card>
+
+    <h1>Card Icon: </h1>
+    <div class="card-showcase" id="one">
+      <card-icon type="math"></card-icon>
+    </div>
+    <div class="card-showcase" id="two">
+
+      <h1>Card Header: </h1>
+      <card-header accent-color="red" type="science"></card-header>
+    </div>
+    <div class="card-showcase">
+      <h1>Card body: </h1>
+      <card-body type="math">
+        <ul>
+          <li>li one</li>
+          <li>li two</li>
+          <li>li three</li>
+          <li>li four</li>
+        </ul>
+      </card-body>
+    </div>
+
+    <div class="card-showcase" id="four">
+      <h1> Card: </h1>
+      <final-card accent-color="blue" type="question" heading="Heading" sub-heading="Science">
+
+        <ul>
+          <li>li one</li>
+          <li>li two</li>
+          <li>li three</li>
+          <li>li four</li>
+        </ul>
+
+      </final-card>
+    </div>
+    <div class="card-showcase" id="three">
+      <h1> Final card: </h1>
+      <final-card accent-color="green" toggle type="science" heading="Heading" sub-heading="Science">
+        <ul>
+          <li>li one</li>
+          <li>li two</li>
+          <li>li three</li>
+          <li>li four</li>
+        </ul>
+        <cta-button></cta-button>
+      </final-card>
+    </div>
   </div>
   <script type="module">
     import "./src/app.js";
-    import "./src/CardFrame.js";
+    // eslint-disable-next-line import/no-extraneous-dependencies
+    import "@ist402group19j/cta-button";
   </script>
 </body>
-
 </html>
-
-<card-frame>
-  <div slot="header">
-    <card-icon>
-    <card-banner>
-    <div slot="header"><slot name="header1"></slot></div>
-    <div slot="subheader"><slot name="header2"></slot></div>
-  <div slot="content"></div>>
-    <slot></slot>
-  </card-frame>

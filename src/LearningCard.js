@@ -1,6 +1,5 @@
 // dependencies / things imported
 import { LitElement, html, css } from 'lit';
-import './CardBanner.js';
 
 // this is the base path to the assets calculated at run time
 // this ensures that assets are shipped correctly when building the demo
@@ -88,7 +87,6 @@ export class LearningCard extends LitElement {
   // HTML - specific to Lit
   render() {
     return html`
-      <card-banner></card-banner>
       <h1>cool</h1>
       <div>${this.type}</div>
       <div>
@@ -97,11 +95,11 @@ export class LearningCard extends LitElement {
           data-label="Header"
           data-layout-slotname="header"
         >
-          <slot name="header"> </slot>
+          <slot name="header"></slot>
         </div>
-        <card-icon type="${beaker}"></card-icon>
-        <img part="icon" src="${lightbulb}" alt=" lightbulb icon" />
-        <img part="icon" src="${question}" alt="Question Icon" />
+        <img part="icon" src="${beaker}" alt="" />
+        <img part="icon" src="${lightbulb}" alt="" />
+        <img part="icon" src="${question}" alt="" />
         <div
           class="slot-wrapper"
           data-label="Content"
