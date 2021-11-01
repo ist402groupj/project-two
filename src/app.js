@@ -1,8 +1,12 @@
 import { LearningCard } from './LearningCard.js';
+import { CardIcon } from './CardIcon.js';
+import { CardHeader } from './CardHeader.js';
+import { CardBody } from './CardBody.js';
+import { FinalCard } from './FInalCard.js';
 
 customElements.define(LearningCard.tag, LearningCard);
-
-customElements.define(CardBanner.tag, CardBanner);
-customElements.define(CardFrame.tag, CardFrame);
 customElements.define(CardIcon.tag, CardIcon);
-customElements.define(JCard.tag, JCard);
+customElements.define(CardHeader.tag, CardHeader);
+customElements.define(CardBody.tag, CardBody);
+
+customElements.define(FinalCard.tag, FinalCard);
