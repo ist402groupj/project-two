@@ -20,8 +20,8 @@ export class LearningCard extends LitElement {
   // HTMLElement life-cycle, built in; use this for setting defaults
   constructor() {
     super();
-    this.myIcon = null;
-    this.type = 'math';
+    this.myIcon = 'beaker';
+    this.type = 'science';
   }
 
   // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
@@ -57,7 +57,7 @@ export class LearningCard extends LitElement {
       :host {
         display: block;
       }
-      :host([type='math']) img {
+      :host([type='science']) img {
         background-color: purple;
       }
       img {
@@ -124,7 +124,8 @@ export class LearningCard extends LitElement {
             inputMethod: 'select',
             options: {
               science: 'Science',
-              math: 'Math',
+              objective: 'Objective',
+              question: 'Question',
             },
           },
         ],

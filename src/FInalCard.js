@@ -34,14 +34,14 @@ export class FinalCard extends LitElement {
       accentColor: { type: String, attribute: "accent-color", reflect: true },
       heading: { type: String, attribute: "heading", reflect: true },
       subHeading: { type: String, attribute: "sub-heading", reflect: true },
-      toggle: { type: Boolean },
+      toggle: { type: Boolean, reflect: true },
       expanded: { type: Boolean }
     };
   }
 
   constructor() {
     super();
-    this.type = "math";
+    this.type = "science";
     this.height = "inherit";
     this.width = "inherit";
     this.heading = "Heading";
@@ -82,7 +82,7 @@ export class FinalCard extends LitElement {
         this.myIcon = 'question';
         this.accentColor = "blue";
       }
-      
+
       if (this.toggle === true && this.expanded === false) {
         this.addEventListener('click', this.expand);
       }
@@ -96,7 +96,8 @@ export class FinalCard extends LitElement {
   render() {
     return html` 
         <div class="final-card-container">
-            <div class="final-card-top"><card-header toggle="${this.toggle}" type="${this.type}" heading="${this.heading}" sub-heading="${this.subHeading}" accent-color="${this.accentColor}"></card-header></div>
+            <div class="final-card-top">
+              <card-header icon="${this.myIcon}" toggle="${this.toggle}" type="${this.type}" heading="${this.heading}" sub-heading="${this.subHeading}" accent-color="${this.accentColor}"></card-header></div>
             <div class="final-card-bottom"><card-body style="border-top:none;"><slot></slot></card-body></div>
         </div>
      `;

@@ -58,7 +58,7 @@ export class CardHeader extends SimpleColors {
 
   constructor() {
     super();
-    this.type = "math";
+    this.type = "science";
     this.icon = "lightbulb"
     this.height = "inherit";
     this.width = "inherit";
@@ -76,6 +76,15 @@ export class CardHeader extends SimpleColors {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === "type" && this[propName] === "science") {
         this.myIcon = "beaker";
+        this.accentColor = "green";
+      }
+      if (propName === 'type' && this[propName] === 'objective') {
+        this.myIcon = 'lightbulb';
+        this.accentColor = "red";
+      }
+      if (propName === 'type' && this[propName] === 'question') {
+        this.myIcon = 'question';
+        this.accentColor = "blue";
       }
       this.style.setProperty("--heading-font-size", this.fontSize);
     });
