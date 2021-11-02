@@ -39,30 +39,16 @@ export class LearningCard extends LitElement {
   // this allows you to react to variables changing and use javascript to perform logic
   updated(changedProperties) {
     changedProperties.forEach((oldValue, propName) => {
-      if (propName === 'type' && this[propName] === 'science') {
-        this.myIcon = 'beaker';
+      if (propName === "type" && this[propName] === "science") {
+        this.myIcon = "beaker";
+      }
+      if (propName === 'type' && this[propName] === 'objective') {
+        this.myIcon = 'lightbulb';
+      }
+      if (propName === 'type' && this[propName] === 'question') {
+        this.myIcon = 'question';
       }
     });
-  }
-
-  // Lit life-cycle; this fires the 1st time the element is rendered on the screen
-  // this is a sign it is safe to make calls to this.shadowRoot
-  firstUpdated(changedProperties) {
-    if (super.firstUpdated) {
-      super.firstUpdated(changedProperties);
-    }
-  }
-
-  // HTMLElement life-cycle, element has been connected to the page / added or moved
-  // this fires EVERY time the element is moved
-  connectedCallback() {
-    super.connectedCallback();
-  }
-
-  // HTMLElement life-cycle, element has been removed from the page OR moved
-  // this fires every time the element moves
-  disconnectedCallback() {
-    super.disconnectedCallback();
   }
 
   // CSS - specific to Lit
@@ -71,7 +57,6 @@ export class LearningCard extends LitElement {
       :host {
         display: block;
       }
-      /* this is how you match something on the tag itself like <learning-card type="math"> and then style the img inside */
       :host([type='math']) img {
         background-color: purple;
       }

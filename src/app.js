@@ -2,7 +2,7 @@ import { LearningCard } from './LearningCard.js';
 import { CardIcon } from './CardIcon.js';
 import { CardHeader } from './CardHeader.js';
 import { CardBody } from './CardBody.js';
-import { FinalCard } from './FInalCard.js';
+import { FinalCard } from './FinalCard.js';
 
 customElements.define(LearningCard.tag, LearningCard);
 customElements.define(CardIcon.tag, CardIcon);

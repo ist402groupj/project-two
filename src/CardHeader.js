@@ -39,7 +39,6 @@ export class CardHeader extends SimpleColors {
         h3{margin:1px;}
         
         :host([toggle=true]) .header-icon:hover{cursor:pointer}       
-        }
       `];
   }
 
