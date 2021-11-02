@@ -10,20 +10,17 @@ export class FinalCard extends LitElement {
   // CSS - specific to Lit
   static get styles() {
     return css`
-        :host{
+        :host {
             display:block;
             height: inherit;
             width: inherit;
-        
-            }
-
-        :host([toggle]) .final-card-bottom{
+        }
+        :host([toggle]) .final-card-bottom {
             transition: max-height 0.75s linear 0s;
             max-height: var(--final-card-bottom, 0);
             height: auto;
             overflow: hidden;
         }
-        
       `;
   }
 
@@ -37,15 +34,14 @@ export class FinalCard extends LitElement {
       accentColor: { type: String, attribute: "accent-color", reflect: true },
       heading: { type: String, attribute: "heading", reflect: true },
       subHeading: { type: String, attribute: "sub-heading", reflect: true },
-      toggle: { type: Boolean },
+      toggle: { type: Boolean, reflect: true },
       expanded: { type: Boolean }
-
     };
   }
 
   constructor() {
     super();
-    this.type = "math";
+    this.type = "science";
     this.height = "inherit";
     this.width = "inherit";
     this.heading = "Heading";
@@ -53,7 +49,6 @@ export class FinalCard extends LitElement {
     this.accentColor = "grey";
     this.toggle = false;
     this.expanded = false;
-
   }
 
   expand() {
@@ -68,7 +63,6 @@ export class FinalCard extends LitElement {
     this.addEventListener('click', this.expand);
     this.expanded = false;
     this.style.setProperty('--final-card-bottom', "0px");
-
   }
 
   // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
@@ -78,46 +72,32 @@ export class FinalCard extends LitElement {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === "type" && this[propName] === "science") {
         this.myIcon = "beaker";
+        this.accentColor = "green";
+      }
+      if (propName === 'type' && this[propName] === 'objective') {
+        this.myIcon = 'lightbulb';
+        this.accentColor = "red";
+      }
+      if (propName === 'type' && this[propName] === 'question') {
+        this.myIcon = 'question';
+        this.accentColor = "blue";
       }
 
-
-      if (this.toggle == true && this.expanded == false) {
+      if (this.toggle === true && this.expanded === false) {
         this.addEventListener('click', this.expand);
       }
-
-      if (this.toggle == true && this.expanded == true) {
+      if (this.toggle === true && this.expanded === true) {
         this.addEventListener('click', this.contract);
       }
     });
-  }
-
-  // Lit life-cycle; this fires the 1st time the element is rendered on the screen
-  // this is a sign it is safe to make calls to this.shadowRoot
-  firstUpdated(changedProperties) {
-    if (super.firstUpdated) {
-
-      /* TODO
-    super.firstUpdated(changedProperties);
-    
-
-    if(this.toggle && this.expanded==false){
-      this.addEventListener('click',this.expand());
-  }
-
-  if(this.toggle && this.expanded==true){
-      this.addEventListener('click',this.contract());
-  }
-
-  */
-
-    }
   }
 
   // HTML - specific to Lit
   render() {
     return html` 
         <div class="final-card-container">
-            <div class="final-card-top"><card-header toggle="${this.toggle}" type="${this.type}" heading="${this.heading}" sub-heading="${this.subHeading}" accent-color="${this.accentColor}"></card-header></div>
+            <div class="final-card-top">
+              <card-header icon="${this.myIcon}" toggle="${this.toggle}" type="${this.type}" heading="${this.heading}" sub-heading="${this.subHeading}" accent-color="${this.accentColor}"></card-header></div>
             <div class="final-card-bottom"><card-body style="border-top:none;"><slot></slot></card-body></div>
         </div>
      `;

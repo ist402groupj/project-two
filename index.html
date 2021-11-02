@@ -35,10 +35,12 @@
       --learning-card-width: 150px;
       background-color: blue;
     }
+
     learning-card[type="science"]::part(icon) {
       width: 200px;
       height: 200px;
     }
+
     .card-showcase {
       display: block;
       height: 200px;
@@ -46,23 +48,27 @@
       margin-top: 100px;
       margin-bottom: 100px;
     }
+
     #one {
-      background-color: gray;
+      background-color: purple;
     }
+
     #two {
       width: 500px;
     }
+
     #three {
       width: 500px;
     }
+
     #four {
       width: 500px;
       margin-bottom: 150px;
     }
   </style>
+
   <title>Project two: learning card</title>
 </head>
-
 <body>
   <ul class="menu">
     <li><a href="#">Card demo</a></li>
@@ -72,7 +78,7 @@
 
     <h1>Card Icon: </h1>
     <div class="card-showcase" id="one">
-      <card-icon type="math"></card-icon>
+      <card-icon type="science"></card-icon>
     </div>
     <div class="card-showcase" id="two">
 
@@ -81,7 +87,7 @@
     </div>
     <div class="card-showcase">
       <h1>Card body: </h1>
-      <card-body type="math">
+      <card-body type="science">
         <ul>
           <li>li one</li>
           <li>li two</li>
@@ -93,7 +99,7 @@
 
     <div class="card-showcase" id="four">
       <h1> Card: </h1>
-      <final-card accent-color="blue" type="question" heading="Heading" sub-heading="Science">
+      <final-card accent-color="blue" type="question" heading="Heading" sub-heading="Question">
 
         <ul>
           <li>li one</li>
@@ -113,14 +119,14 @@
           <li>li three</li>
           <li>li four</li>
         </ul>
-        <cta-button></cta-button>
+        <cta-btn title=""></cta-btn>
       </final-card>
     </div>
   </div>
   <script type="module">
     import "./src/app.js";
     // eslint-disable-next-line import/no-extraneous-dependencies
-    import "@ist402group19j/cta-button";
+    import "@ist402group19j/cta-button/cta-btn.js";
   </script>
 </body>
 </html>
