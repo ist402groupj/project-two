@@ -97,7 +97,7 @@ export class FinalCard extends LitElement {
     return html` 
         <div class="final-card-container">
             <div class="final-card-top">
-              <card-header icon="${this.myIcon}" toggle="${this.toggle}" type="${this.type}" heading="${this.heading}" sub-heading="${this.subHeading}" accent-color="${this.accentColor}"></card-header></div>
+              <card-header toggle="${this.toggle}" type="${this.type}" icon="${this.myIcon}" heading="${this.heading}" sub-heading="${this.subHeading}" accent-color="${this.accentColor}"></card-header></div>
             <div class="final-card-bottom"><card-body style="border-top:none;"><slot></slot></card-body></div>
         </div>
      `;
