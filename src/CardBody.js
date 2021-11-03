@@ -39,6 +39,12 @@ export class CardBody extends LitElement {
       if (propName === "type" && this[propName] === "science") {
         this.myIcon = "beaker";
       }
+      if (propName === "type" && this[propName] === "objective") {
+        this.myIcon = "lightbulb";
+      }
+      if (propName === "type" && this[propName] === "question") {
+        this.myIcon = "question";
+      }
     });
   }
 
