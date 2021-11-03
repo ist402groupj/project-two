@@ -35,11 +35,11 @@ export class CardIcon extends LitElement {
 
   constructor() {
     super();
-    this.type = 'math';
+    this.type = 'science';
     this.iconHeight = 'inherit';
     this.iconWidth = 'inherit';
     this.icon_value = new Map();
-    this.icon_value.set('math', lightbulb);
+    this.icon_value.set('objective', lightbulb);
     this.icon_value.set('science', beaker);
     this.icon_value.set('question', question);
   }

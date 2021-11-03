@@ -35,10 +35,12 @@
       --learning-card-width: 150px;
       background-color: blue;
     }
+
     learning-card[type="science"]::part(icon) {
       width: 200px;
       height: 200px;
     }
+
     .card-showcase {
       display: block;
       height: 200px;
@@ -46,42 +48,44 @@
       margin-top: 100px;
       margin-bottom: 100px;
     }
+
     #one {
-      background-color: gray;
+      background-color: purple;
     }
+
     #two {
       width: 500px;
     }
+
     #three {
       width: 500px;
     }
+
     #four {
       width: 500px;
       margin-bottom: 150px;
     }
   </style>
+
   <title>Project two: learning card</title>
 </head>
-
 <body>
   <ul class="menu">
     <li><a href="#">Card demo</a></li>
     <li><a href="/hax.html">HAX, card demo</a></li>
   </ul>
   <div class="wrapper">
-
     <h1>Card Icon: </h1>
     <div class="card-showcase" id="one">
-      <card-icon type="math"></card-icon>
+      <card-icon type="science"></card-icon>
     </div>
     <div class="card-showcase" id="two">
-
       <h1>Card Header: </h1>
-      <card-header accent-color="red" type="science"></card-header>
+      <card-header type="question"></card-header>
     </div>
     <div class="card-showcase">
       <h1>Card body: </h1>
-      <card-body type="math">
+      <card-body type="science">
         <ul>
           <li>li one</li>
           <li>li two</li>
@@ -90,18 +94,15 @@
         </ul>
       </card-body>
     </div>
-
     <div class="card-showcase" id="four">
       <h1> Card: </h1>
-      <final-card accent-color="blue" type="question" heading="Heading" sub-heading="Science">
-
+      <final-card type="objective" heading="Heading" sub-heading="Objective">
         <ul>
           <li>li one</li>
           <li>li two</li>
           <li>li three</li>
           <li>li four</li>
         </ul>
-
       </final-card>
     </div>
     <div class="card-showcase" id="three">
@@ -113,14 +114,14 @@
           <li>li three</li>
           <li>li four</li>
         </ul>
-        <cta-button></cta-button>
+        <cta-btn title="" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></cta-btn>
       </final-card>
     </div>
   </div>
   <script type="module">
     import "./src/app.js";
     // eslint-disable-next-line import/no-extraneous-dependencies
-    import "@ist402group19j/cta-button";
+    import "@ist402group19j/cta-button/cta-btn.js";
   </script>
 </body>
 </html>

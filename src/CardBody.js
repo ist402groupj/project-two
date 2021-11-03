@@ -28,7 +28,7 @@ export class CardBody extends LitElement {
 
   constructor() {
     super();
-    this.type = "math";
+    this.type = "science";
   }
 
   // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
@@ -38,6 +38,12 @@ export class CardBody extends LitElement {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === "type" && this[propName] === "science") {
         this.myIcon = "beaker";
+      }
+      if (propName === "type" && this[propName] === "objective") {
+        this.myIcon = "lightbulb";
+      }
+      if (propName === "type" && this[propName] === "question") {
+        this.myIcon = "question";
       }
     });
   }
