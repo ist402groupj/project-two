@@ -27,7 +27,6 @@ describe('FinalCard', () => {
     expect(body).to.exist;
   });
 
-  // fails
   it('checks updatedProperties', () => {
     setTimeout(() => {
       element.type = 'science';

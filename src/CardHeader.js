@@ -75,15 +75,15 @@ export class CardHeader extends SimpleColors {
   updated(changedProperties) {
     changedProperties.forEach((oldValue, propName) => {
       if (propName === "type" && this[propName] === "science") {
-        this.myIcon = "beaker";
+        this.icon = "beaker";
         this.accentColor = "green";
       }
       if (propName === 'type' && this[propName] === 'objective') {
-        this.myIcon = 'lightbulb';
+        this.icon = 'lightbulb';
         this.accentColor = "red";
       }
       if (propName === 'type' && this[propName] === 'question') {
-        this.myIcon = 'question';
+        this.icon = 'question';
         this.accentColor = "blue";
       }
       this.style.setProperty("--heading-font-size", this.fontSize);
